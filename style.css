@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #db62f6;
+    padding: 10px;
+    color: white;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#productList {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+
+#cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#cart-dropdown {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 300px;
+    display: none;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+#cart-dropdown.visible {
+    display: block;
+}
+
+#cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-dropdown ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+#cart-dropdown button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#cart-dropdown button:hover {
+    background-color: #555;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+
+.filter-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filter-btn.active {
+    background-color: #333;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+    color: white;
+}
